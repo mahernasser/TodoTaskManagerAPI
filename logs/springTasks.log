@@ -1,0 +1,100 @@
+2024-02-14T11:36:57.718+02:00  INFO 2976 --- [restartedMain] com.maher.TodoApp                        : Starting TodoApp using Java 17.0.8 with PID 2976 (C:\Users\ELGOHARY\IdeaProjects\springboot-demo\target\classes started by ELGOHARY in C:\Users\ELGOHARY\IdeaProjects\springboot-demo)
+2024-02-14T11:36:57.729+02:00  INFO 2976 --- [restartedMain] com.maher.TodoApp                        : No active profile set, falling back to 1 default profile: "default"
+2024-02-14T11:36:57.822+02:00  INFO 2976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-02-14T11:36:57.822+02:00  INFO 2976 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-02-14T11:36:58.542+02:00  INFO 2976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2024-02-14T11:36:58.599+02:00  INFO 2976 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 1 MongoDB repository interfaces.
+2024-02-14T11:36:59.277+02:00  INFO 2976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8089 (http)
+2024-02-14T11:36:59.286+02:00  INFO 2976 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-02-14T11:36:59.286+02:00  INFO 2976 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.11]
+2024-02-14T11:36:59.347+02:00  INFO 2976 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-02-14T11:36:59.347+02:00  INFO 2976 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1524 ms
+2024-02-14T11:36:59.589+02:00  INFO 2976 --- [restartedMain] org.mongodb.driver.client                : MongoClient with metadata {"driver": {"name": "mongo-java-driver|sync|spring-boot", "version": "4.9.1"}, "os": {"type": "Windows", "name": "Windows 10", "architecture": "amd64", "version": "10.0"}, "platform": "Java/Oracle Corporation/17.0.8+9-LTS-211"} created with settings MongoClientSettings{readPreference=primary, writeConcern=WriteConcern{w=null, wTimeout=null ms, journal=null}, retryWrites=true, retryReads=true, readConcern=ReadConcern{level=null}, credential=null, streamFactoryFactory=null, commandListeners=[], codecRegistry=ProvidersCodecRegistry{codecProviders=[ValueCodecProvider{}, BsonValueCodecProvider{}, DBRefCodecProvider{}, DBObjectCodecProvider{}, DocumentCodecProvider{}, CollectionCodecProvider{}, IterableCodecProvider{}, MapCodecProvider{}, GeoJsonCodecProvider{}, GridFSFileCodecProvider{}, Jsr310CodecProvider{}, JsonObjectCodecProvider{}, BsonCodecProvider{}, EnumCodecProvider{}, com.mongodb.client.model.mql.ExpressionCodecProvider@49564e43, com.mongodb.Jep395RecordCodecProvider@7cb6f5ec]}, loggerSettings=LoggerSettings{maxDocumentLength=1000}, clusterSettings={hosts=[localhost:27017], srvServiceName=mongodb, mode=SINGLE, requiredClusterType=UNKNOWN, requiredReplicaSetName='null', serverSelector='null', clusterListeners='[]', serverSelectionTimeout='30000 ms', localThreshold='30000 ms'}, socketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=0, receiveBufferSize=0, sendBufferSize=0}, heartbeatSocketSettings=SocketSettings{connectTimeoutMS=10000, readTimeoutMS=10000, receiveBufferSize=0, sendBufferSize=0}, connectionPoolSettings=ConnectionPoolSettings{maxSize=100, minSize=0, maxWaitTimeMS=120000, maxConnectionLifeTimeMS=0, maxConnectionIdleTimeMS=0, maintenanceInitialDelayMS=0, maintenanceFrequencyMS=60000, connectionPoolListeners=[], maxConnecting=2}, serverSettings=ServerSettings{heartbeatFrequencyMS=10000, minHeartbeatFrequencyMS=500, serverListeners='[]', serverMonitorListeners='[]'}, sslSettings=SslSettings{enabled=false, invalidHostNameAllowed=false, context=null}, applicationName='null', compressorList=[], uuidRepresentation=JAVA_LEGACY, serverApi=null, autoEncryptionSettings=null, contextProvider=null}
+2024-02-14T11:36:59.609+02:00  INFO 2976 --- [cluster-ClusterId{value='65cc89bb5cdf6654b08f8be3', description='null'}-localhost:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=21, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=36380200}
+2024-02-14T11:36:59.816+02:00  INFO 2976 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2024-02-14T11:37:00.344+02:00 DEBUG 2976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-02-14T11:37:00.437+02:00 DEBUG 2976 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2024-02-14T11:37:00.464+02:00 DEBUG 2976 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-02-14T11:37:00.474+02:00 DEBUG 2976 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-02-14T11:37:00.581+02:00  INFO 2976 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8089 (http) with context path ''
+2024-02-14T11:37:00.592+02:00  INFO 2976 --- [restartedMain] com.maher.TodoApp                        : Started TodoApp in 3.442 seconds (process running for 16.099)
+2024-02-14T11:37:17.022+02:00  INFO 2976 --- [http-nio-8089-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-02-14T11:37:17.023+02:00  INFO 2976 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-02-14T11:37:17.023+02:00 DEBUG 2976 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-02-14T11:37:17.023+02:00 DEBUG 2976 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-02-14T11:37:17.023+02:00 DEBUG 2976 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-02-14T11:37:17.024+02:00 DEBUG 2976 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7ecae025
+2024-02-14T11:37:17.024+02:00 DEBUG 2976 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@36fddfe
+2024-02-14T11:37:17.025+02:00 DEBUG 2976 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-02-14T11:37:17.025+02:00  INFO 2976 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-02-14T11:37:17.034+02:00 DEBUG 2976 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/todos/", parameters={}
+2024-02-14T11:37:17.048+02:00 DEBUG 2976 --- [http-nio-8089-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.maher.controllers.todos.TodoController#addTask(Todo)
+2024-02-14T11:37:17.135+02:00 DEBUG 2976 --- [http-nio-8089-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.maher.enitites.Todo@6da14393]
+2024-02-14T11:37:17.377+02:00 DEBUG 2976 --- [http-nio-8089-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.maher.exceptions.CustomExceptionHandler#handleApiException(BaseException, WebRequest)
+2024-02-14T11:37:17.418+02:00 DEBUG 2976 --- [http-nio-8089-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-02-14T11:37:17.422+02:00 DEBUG 2976 --- [http-nio-8089-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.maher.exceptions.models.ExceptionModel@55cd3307]
+2024-02-14T11:37:17.472+02:00  WARN 2976 --- [http-nio-8089-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.maher.exceptions.ConflictException: Todo with title first todo already exists]
+2024-02-14T11:37:17.474+02:00 DEBUG 2976 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 409 CONFLICT
+2024-02-14T11:37:20.689+02:00 DEBUG 2976 --- [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/todos/", parameters={}
+2024-02-14T11:37:20.690+02:00 DEBUG 2976 --- [http-nio-8089-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.maher.controllers.todos.TodoController#addTask(Todo)
+2024-02-14T11:37:20.692+02:00 DEBUG 2976 --- [http-nio-8089-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.maher.enitites.Todo@60f0c7a9]
+2024-02-14T11:37:20.700+02:00 DEBUG 2976 --- [http-nio-8089-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.maher.exceptions.CustomExceptionHandler#handleApiException(BaseException, WebRequest)
+2024-02-14T11:37:20.701+02:00 DEBUG 2976 --- [http-nio-8089-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-02-14T11:37:20.701+02:00 DEBUG 2976 --- [http-nio-8089-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.maher.exceptions.models.ExceptionModel@6e3725c7]
+2024-02-14T11:37:20.702+02:00  WARN 2976 --- [http-nio-8089-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.maher.exceptions.ConflictException: Todo with title first todo already exists]
+2024-02-14T11:37:20.702+02:00 DEBUG 2976 --- [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 409 CONFLICT
+2024-02-14T11:38:05.669+02:00 DEBUG 2976 --- [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : DELETE "/api/v1/todos/first%20todo", parameters={}
+2024-02-14T11:38:05.671+02:00 DEBUG 2976 --- [http-nio-8089-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.maher.controllers.todos.TodoController#deleteTask(String)
+2024-02-14T11:38:05.688+02:00 DEBUG 2976 --- [http-nio-8089-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-02-14T11:38:05.688+02:00 DEBUG 2976 --- [http-nio-8089-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2024-02-14T11:38:05.689+02:00 DEBUG 2976 --- [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 204 NO_CONTENT
+2024-02-14T11:38:08.517+02:00 DEBUG 2976 --- [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/todos/", parameters={}
+2024-02-14T11:38:08.518+02:00 DEBUG 2976 --- [http-nio-8089-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.maher.controllers.todos.TodoController#listTodo()
+2024-02-14T11:38:08.522+02:00  INFO 2976 --- [http-nio-8089-exec-5] com.maher.services.TodoService           : All tasks are retrieved 1
+2024-02-14T11:38:08.525+02:00 DEBUG 2976 --- [http-nio-8089-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-02-14T11:38:08.526+02:00 DEBUG 2976 --- [http-nio-8089-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.maher.enitites.Todo@1dee86fd]]
+2024-02-14T11:38:08.529+02:00 DEBUG 2976 --- [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-02-14T11:38:24.884+02:00 DEBUG 2976 --- [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : DELETE "/api/v1/todos/65cb8f4449ff4b0834bca541", parameters={}
+2024-02-14T11:38:24.886+02:00 DEBUG 2976 --- [http-nio-8089-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.maher.controllers.todos.TodoController#deleteTask(String)
+2024-02-14T11:38:24.933+02:00 DEBUG 2976 --- [http-nio-8089-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-02-14T11:38:24.933+02:00 DEBUG 2976 --- [http-nio-8089-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2024-02-14T11:38:24.934+02:00 DEBUG 2976 --- [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 204 NO_CONTENT
+2024-02-14T11:38:27.423+02:00 DEBUG 2976 --- [http-nio-8089-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/todos/", parameters={}
+2024-02-14T11:38:27.424+02:00 DEBUG 2976 --- [http-nio-8089-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.maher.controllers.todos.TodoController#listTodo()
+2024-02-14T11:38:27.426+02:00  INFO 2976 --- [http-nio-8089-exec-7] com.maher.services.TodoService           : All tasks are retrieved 0
+2024-02-14T11:38:27.427+02:00 DEBUG 2976 --- [http-nio-8089-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-02-14T11:38:27.427+02:00 DEBUG 2976 --- [http-nio-8089-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[]]
+2024-02-14T11:38:27.428+02:00 DEBUG 2976 --- [http-nio-8089-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-02-14T11:39:00.205+02:00 DEBUG 2976 --- [http-nio-8089-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/todos/", parameters={}
+2024-02-14T11:39:00.206+02:00 DEBUG 2976 --- [http-nio-8089-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.maher.controllers.todos.TodoController#addTask(Todo)
+2024-02-14T11:39:00.207+02:00 DEBUG 2976 --- [http-nio-8089-exec-8] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [com.maher.enitites.Todo@1ebe841a]
+2024-02-14T11:39:00.240+02:00 DEBUG 2976 --- [http-nio-8089-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-02-14T11:39:00.240+02:00 DEBUG 2976 --- [http-nio-8089-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.maher.enitites.Todo@1ebe841a]
+2024-02-14T11:39:00.242+02:00 DEBUG 2976 --- [http-nio-8089-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2024-02-14T11:40:05.494+02:00 DEBUG 2976 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : DELETE "/api/v1/todos/65cb8f4449ff4b0834bca541", parameters={}
+2024-02-14T11:40:05.494+02:00 DEBUG 2976 --- [http-nio-8089-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.maher.controllers.todos.TodoController#deleteTask(String)
+2024-02-14T11:40:05.497+02:00 DEBUG 2976 --- [http-nio-8089-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-02-14T11:40:05.498+02:00 DEBUG 2976 --- [http-nio-8089-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2024-02-14T11:40:05.498+02:00 DEBUG 2976 --- [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 204 NO_CONTENT
+2024-02-14T11:40:14.670+02:00 DEBUG 2976 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/todos/65cc8a345cdf6654b08f8be4", parameters={}
+2024-02-14T11:40:14.671+02:00 DEBUG 2976 --- [http-nio-8089-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.maher.controllers.todos.TodoController#todo(String)
+2024-02-14T11:40:14.674+02:00 DEBUG 2976 --- [http-nio-8089-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-02-14T11:40:14.675+02:00 DEBUG 2976 --- [http-nio-8089-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [com.maher.enitites.Todo@2394b37f]
+2024-02-14T11:40:14.676+02:00 DEBUG 2976 --- [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-02-14T11:40:16.377+02:00 DEBUG 2976 --- [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/todos/", parameters={}
+2024-02-14T11:40:16.377+02:00 DEBUG 2976 --- [http-nio-8089-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.maher.controllers.todos.TodoController#listTodo()
+2024-02-14T11:40:16.380+02:00  INFO 2976 --- [http-nio-8089-exec-3] com.maher.services.TodoService           : All tasks are retrieved 1
+2024-02-14T11:40:16.380+02:00 DEBUG 2976 --- [http-nio-8089-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-02-14T11:40:16.381+02:00 DEBUG 2976 --- [http-nio-8089-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.maher.enitites.Todo@6a08acd9]]
+2024-02-14T11:40:16.381+02:00 DEBUG 2976 --- [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-02-14T11:40:27.114+02:00 DEBUG 2976 --- [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : DELETE "/api/v1/todos/65cc8a345cdf6654b08f8be4", parameters={}
+2024-02-14T11:40:27.115+02:00 DEBUG 2976 --- [http-nio-8089-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.maher.controllers.todos.TodoController#deleteTask(String)
+2024-02-14T11:40:27.120+02:00 DEBUG 2976 --- [http-nio-8089-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-02-14T11:40:27.120+02:00 DEBUG 2976 --- [http-nio-8089-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Nothing to write: null body
+2024-02-14T11:40:27.121+02:00 DEBUG 2976 --- [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 204 NO_CONTENT
+2024-02-14T11:40:29.927+02:00 DEBUG 2976 --- [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/todos/", parameters={}
+2024-02-14T11:40:29.928+02:00 DEBUG 2976 --- [http-nio-8089-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.maher.controllers.todos.TodoController#listTodo()
+2024-02-14T11:40:29.930+02:00  INFO 2976 --- [http-nio-8089-exec-5] com.maher.services.TodoService           : All tasks are retrieved 0
+2024-02-14T11:40:29.930+02:00 DEBUG 2976 --- [http-nio-8089-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2024-02-14T11:40:29.931+02:00 DEBUG 2976 --- [http-nio-8089-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[]]
+2024-02-14T11:40:29.932+02:00 DEBUG 2976 --- [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK

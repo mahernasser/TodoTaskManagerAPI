@@ -1,0 +1,19 @@
+server:
+  port: 8089
+
+spring:
+  data:
+    mongodb:
+      database: springTasks
+      host: localhost
+      port: 27017
+
+#that's logging file configuration
+logging:
+  level:
+    org:
+      springframework:
+        web: DEBUG
+
+  file:
+    name: logs/springTasks.log
