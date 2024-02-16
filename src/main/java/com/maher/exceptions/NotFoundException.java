@@ -10,4 +10,5 @@ public class NotFoundException extends BaseException {
     public HttpStatus getStatusCode() {
         return HttpStatus.NOT_FOUND;
     }
+
 }

@@ -2,6 +2,7 @@ package com.maher.exceptions.models;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -13,7 +14,7 @@ public class ValidationError {
 
     public ValidationError() {
         timeStamp = new Date();
-
+        this.errors = new ArrayList<>();
     }
 
     public void addError (String error) {

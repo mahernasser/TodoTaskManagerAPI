@@ -36,8 +36,10 @@ public class TodoService {
 
 
     public Todo findByTitle(String title) {
+
         return todoRepository.findTodoByTitle(title)
                 .orElseThrow(() -> new NotFoundException("No Record associated with this title " + title));
+
     }
 
 
@@ -59,7 +61,7 @@ public class TodoService {
     }
 
     public void clearAllTodos() {
-
         todoRepository.deleteAll();
     }
+
 }
