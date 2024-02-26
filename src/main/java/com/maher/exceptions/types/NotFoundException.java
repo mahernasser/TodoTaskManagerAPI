@@ -1,5 +1,6 @@
-package com.maher.exceptions;
+package com.maher.exceptions.types;
 
+import com.maher.exceptions.base.BaseException;
 import org.springframework.http.HttpStatus;
 
 public class NotFoundException extends BaseException {
