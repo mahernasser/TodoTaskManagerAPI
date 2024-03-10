@@ -1,16 +1,15 @@
 package com.maher.services;
 
 import com.maher.enitites.Todo;
-import com.maher.repositories.TodoRepository;
+import com.maher.repositories.TodoRepo;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mockito;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.assertj.core.api.Assertions.*;
 
 import java.util.Arrays;
 import java.util.List;
@@ -19,13 +18,18 @@ import java.util.Optional;
 import static org.assertj.core.api.AssertionsForInterfaceTypes.*;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.BDDMockito.given;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
+@AutoConfigureMockMvc
 public class TodoServiceTest {
 
     @MockBean
-    private TodoRepository todoRepository;
+    private TodoRepo todoRepository;
+
+
     private TodoService todoService;
 
 
@@ -59,5 +63,10 @@ public class TodoServiceTest {
                 .hasMessage("No Record associated with this id 5");
     }
 
+    @Test
+    public void whenClearAllTodos_thenSuccess() {
+        todoService.clearAllTodos();
+        verify(todoRepository, times(1)).deleteAll();
+    }
 
 }

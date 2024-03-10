@@ -1,4 +1,4 @@
-package com.maher.controllers.todos;
+package com.maher.controllers;
 
 import com.maher.enitites.Todo;
 import com.maher.services.TodoService;

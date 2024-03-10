@@ -3,7 +3,7 @@ package com.maher.services;
 import com.maher.enitites.Todo;
 import com.maher.exceptions.types.ConflictException;
 import com.maher.exceptions.types.NotFoundException;
-import com.maher.repositories.TodoRepository;
+import com.maher.repositories.TodoRepo;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,9 +13,9 @@ import java.util.List;
 
 @Service
 public class TodoService {
-    private final TodoRepository todoRepository;
+    private final TodoRepo todoRepository;
 
-    public TodoService(TodoRepository todoRepository) {
+    public TodoService(TodoRepo todoRepository) {
         this.todoRepository = todoRepository;
     }
 

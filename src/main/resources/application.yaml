@@ -1,5 +1,5 @@
 server:
-  port: 8089
+  port: 8082
 
 spring:
   data:
@@ -8,12 +8,17 @@ spring:
       host: localhost
       port: 27017
 
-##that's logging file configuration
-#logging:
-#  level:
-#    org:
-#      springframework:
-#        web: DEBUG
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
+
 #
-#  file:
-#    name: logs/springTasks.log
+#security:
+#  whitelist: api/v1/auth/**
+
+auth:
+  expiration: 604800
+  secret: secret_maher_random_8K%#DF&2_java_spring-security
+  header: Authorization
